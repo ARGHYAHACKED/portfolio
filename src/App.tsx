@@ -36,7 +36,7 @@ function App() {
           <>
             <Scene />
             <CustomCursor />
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <FullscreenToggle />
             <Navbar />
             <main className="relative z-10">

@@ -30,25 +30,25 @@ const Timeline = () => {
 
   const events = [
     {
-      time: "2019 - 2023",
+      time: "2020 - 2022",
+      title: "12th Passout",
+      description: "Completed my 12th from Arambagh High School.",
+    },
+    {
+      time: "2022 - 2026",
       title: "Bachelor of Technology in Computer Science",
-      description: "Studied at Techno India University with a focus on full-stack development.",
+      description: "Pursuing B.Tech in Computer Science from Techno India University.",
     },
-    {
-      time: "2021",
-      title: "Internship at IPAC",
-      description: "Worked as a Campaign Analyst during the West Bengal Elections.",
-    },
-    {
-      time: "2022",
-      title: "Internship at SDLC Corp",
-      description: "Worked as a Social Media Manager and improved marketing strategies.",
-    },
-    {
-      time: "2023",
-      title: "Full-stack Developer Project",
-      description: "Developed a job portal for the SIH hackathon project.",
-    },
+    // {
+    //   time: "2",
+    //   title: "Internship at SDLC Corp",
+    //   description: "Worked as a Social Media Manager and improved marketing strategies.",
+    // },
+    // {
+    //   time: "2023",
+    //   title: "Full-stack Developer Project",
+    //   description: "Developed a job portal for the SIH hackathon project.",
+    // },
   ]
 
   useEffect(() => {

@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 const WorkExperience = () => {
   const experiences = [
     {
-      title: "Software Engineer",
-      company: "Example Company",
-      period: "2020 - Present",
-      description: "Led development of key features and maintained core systems"
+      title: "Buisness Consultant",
+      company: "Diginamics It Service Ltd.",
+      period: "2024, March - Present",
+      description: "We here consult people to grow their business",
     },
     {
       title: "Frontend Developer",
-      company: "Tech Corp",
-      period: "2018 - 2020",
+      company: "Education Arena",
+      period: "2024,September - 2024,December",
       description: "Developed responsive web applications using React"
     },
   ];

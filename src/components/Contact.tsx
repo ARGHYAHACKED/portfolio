@@ -21,7 +21,7 @@ export const Contact = () => {
       setTimeout(() => {
         setShowForm(false);
         setSuccess(false);
-      }, 2000); // Auto-close after success
+      }, 2000);
     } catch (error) {
       console.error("Error sending message:", error);
     }
@@ -34,11 +34,21 @@ export const Contact = () => {
       <p className="text-gray-400 mt-2">
         If you're interested in working together, feel free to reach out!
       </p>
+      
+      {/* Social Media Links */}
       <div className="flex justify-center gap-4 mt-4">
-        <GitHub fontSize="large" />
-        <LinkedIn fontSize="large" />
-        <Mail fontSize="large" />
+        <a href="https://github.com/ARGHYAHACKED/N4si" target="_blank" rel="noopener noreferrer">
+          <GitHub fontSize="large" className="hover:text-purple-500 cursor-pointer transition-colors" />
+        </a>
+        <a href="https://www.linkedin.com/in/arghya-samanta-4432b1256/" target="_blank" rel="noopener noreferrer">
+          <LinkedIn fontSize="large" className="hover:text-blue-500 cursor-pointer transition-colors" />
+        </a>
+        <a href="mailto:samantaarghya204@gmail.com">
+  <Mail fontSize="large" className="hover:text-red-500 cursor-pointer transition-colors" />
+</a>
+
       </div>
+
       <button
         onClick={() => setShowForm(true)}
         className="mt-6 bg-purple-500 px-6 py-3 text-white rounded-lg shadow-md hover:bg-purple-600"
@@ -46,11 +56,10 @@ export const Contact = () => {
         Contact Now
       </button>
 
-      {/* Floating Contact Form with Neomorphism Design */}
+      {/* Floating Contact Form */}
       {showForm && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-md z-50">
           <div className="bg-[#e0e0e0] shadow-[8px_8px_16px_#bebebe,-8px_-8px_16px_#ffffff] p-8 rounded-xl max-w-md w-full relative">
-            {/* Close Button */}
             <button
               onClick={() => setShowForm(false)}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"

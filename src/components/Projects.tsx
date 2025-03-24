@@ -4,17 +4,17 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Example Project 1",
+      title: "Text Share",
       description: "A full-stack application built with React and Node.js",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
-      github: "#",
+      image: "/text.png",
+      github: "https://github.com/ARGHYAHACKED/Text_Sharing",
       live: "#"
     },
     {
-      title: "Example Project 2",
+      title: "Code Review",
       description: "Mobile-first web application with real-time features",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=600",
-      github: "#",
+      image: "/code.png",
+      github: "https://github.com/ARGHYAHACKED/code_review",
       live: "#"
     },
   ];
@@ -41,10 +41,10 @@ const Projects = () => {
                     <Github size={20} />
                     <span>Code</span>
                   </a>
-                  <a href={project.live} className="flex items-center gap-2 text-purple-400 hover:text-purple-300">
+                  {/* <a href={project.live} className="flex items-center gap-2 text-purple-400 hover:text-purple-300">
                     <ExternalLink size={20} />
                     <span>Live Demo</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
