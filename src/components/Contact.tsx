@@ -16,7 +16,7 @@ export const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/api/contacts", formData);
+      await axios.post("https://portfolio-eaw0.onrender.com/api/contacts", formData);
       setSuccess(true);
       setTimeout(() => {
         setShowForm(false);
